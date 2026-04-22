@@ -1,0 +1,6 @@
+- name: Hello World
+  hosts: all
+  tasks:
+    - ansible.builtin.dnf:
+        name: vim
+        state: latest

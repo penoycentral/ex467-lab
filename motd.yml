@@ -1,8 +1,0 @@
-- name: Hello World
-  hosts: all
-  tasks:
-    - ansible.builtin.command:
-        cmd: cat /etc/motd
-      register: motd_output
-    - ansible.builtin.debug:
-        var: motd_output
