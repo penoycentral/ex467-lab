@@ -9,5 +9,5 @@
     - ansible.builtin.template:
         src: motd.j2
         dest: /tmp/motd
-    - ansible.builtin.command:
+    - ansible.builtin.shell:
         cmd: cat /tmp/motd
