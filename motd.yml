@@ -1,0 +1,13 @@
+- name: Sample motd playbook
+  hosts: dev
+  tasks:
+    - ansible.builtin.debug:
+        msg: |
+          Operating System: {{ vm_os }} 
+          Amount of RAM: {{ vm_ram }}
+          Amount of Disk: {{ vm_disk }}
+    - ansible.builtin.template:
+        src: motd.j2
+        dest: /tmp/motd
+    - ansible.builtin.command:
+        cmd: cat /tmp/motd
