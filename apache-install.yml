@@ -1,4 +1,4 @@
 - name: Install apache webserver
   hosts: webserver
-  collections:
+  roles:
     - lab.webserver
