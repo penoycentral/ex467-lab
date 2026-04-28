@@ -1,0 +1,4 @@
+- name: Install apache webserver
+  hosts: webserver
+  roles:
+    - lab.webserver
