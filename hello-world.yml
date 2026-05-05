@@ -4,4 +4,4 @@
     - ansible.builtin.debug:
         msg: "Hello from {{ ansible_hostname }}"
     - ansible.builtin.debug:
-        msg: "{{ lab.test }}"
+        msg: "{{ lab_test }}"
