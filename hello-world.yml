@@ -1,5 +1,6 @@
 - name: Hello World
   hosts: local
+  gather_facts: false
   tasks:
     - ansible.builtin.debug:
         msg: "Hello from {{ ansible_hostname }}"
